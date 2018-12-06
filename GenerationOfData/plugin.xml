@@ -45,8 +45,8 @@
                id="ENMenu">
 		</menu>
 		<action
-               class="en.actions.ExtractDataSet"
-               id="actions.ExtractDataSet"
+               class="en.actions.ExtractClassName"
+               id="actions.ExtractClassName"
                label="&amp;Extract DataSet"
                tooltip="Extract DataSet"
                menubarPath="ENMenu/ENGroup"
