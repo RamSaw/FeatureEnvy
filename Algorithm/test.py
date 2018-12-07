@@ -15,10 +15,11 @@ from keras.models import model_from_json
 
 MAX_SEQUENCE_LENGTH = 15 
 
-TESTPATH = 'data/test-projectName/'
-MODELPATH = 'model/'
-FILENAME = 'data/test-projectName/test_ClssId.txt'
-TARGETPATH = 'data/test-projectName/targetClasses.txt'
+test_project_name = '1#Fold/test-junit'
+TESTPATH = '../Data/' + test_project_name + '/'
+MODELPATH = 'model-CNN/'
+FILENAME = '../Data/' + test_project_name + '/test_ClssId.txt'
+TARGETPATH = '../Data/' + test_project_name + '/targetClasses.txt'
 values = []
 predsTargetClassNames = []
 print ("start time:"+time.strftime("%Y/%m/%d  %H:%M:%S"))
@@ -38,8 +39,8 @@ FP = 0
 TN = 0 
 NUM_CORRECT = 0
 TOTAL = 0
-model = model_from_json(open(MODELPATH + 'my_model_n#Fold.json').read())  
-model.load_weights(MODELPATH + 'my_model_weights_n#Fold.h5')
+model = model_from_json(open(MODELPATH + 'my_model_1#Fold.json').read())
+model.load_weights(MODELPATH + 'my_model_weights_1#Fold.h5')
 ii = 0
 for sentence in values:
     ii=ii+1
@@ -59,7 +60,7 @@ for sentence in values:
                 test_label =values[2:]
                 test_labels.append(test_label)
         
-                
+
         with open(TESTPATH + 'test_Names'+classId+'.txt','r') as file_to_read:
             for line in file_to_read.readlines():
                 test_texts.append(line)
@@ -67,7 +68,7 @@ for sentence in values:
                 targetClassNames.append(line[10:])
         
         tokenizer1 = Tokenizer(num_words=None)
-        tokenizer1.fit_on_texts(test_texts)
+        tokenizer1.fit_on_texts(test_texts) # test_texts - list of lists of strings for input, why not just list of strings?
         test_sequences = tokenizer1.texts_to_sequences(test_texts)
         test_word_index = tokenizer1.word_index
         test_data = pad_sequences(test_sequences, maxlen=MAX_SEQUENCE_LENGTH)  

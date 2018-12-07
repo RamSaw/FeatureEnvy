@@ -1,4 +1,15 @@
 SELECT *
+FROM (SELECT moveMethodRefactoringWithoutSourceDistance.methodName,
+       moveMethodRefactoringWithoutSourceDistance.methodParameters,
+       moveMethodRefactoringWithoutSourceDistance.sourceClassId,
+       moveMethodRefactoringWithoutSourceDistance.sourceClassQualifiedName,
+       moveMethodRefactoringWithoutSourceDistance.sourceClassName,
+       moveMethodRefactoringWithoutSourceDistance.targetClassId,
+       moveMethodRefactoringWithoutSourceDistance.targetClassQualifiedName,
+       moveMethodRefactoringWithoutSourceDistance.targetClassName,
+       COALESCE(distancevalue1.distance, 1) as sourceClassDistance,
+       moveMethodRefactoringWithoutSourceDistance.distance as targetClassDistance,
+       moveMethodRefactoringWithoutSourceDistance.IsMethodNotInThisClass
        FROM (SELECT distance_method_both_classes.methodId,
        distance_method_both_classes.methodName,
        distance_method_both_classes.methodParameters,
@@ -38,4 +49,9 @@ SELECT *
                JOIN classinfo ON classinfo.ClassQualifiedName = distance_method.className) as distance_method_taget_class
                JOIN classinfo ON distance_method_taget_class.sourceClassQualifiedName = classinfo.ClassQualifiedName)
                   as distance_method_both_classes
-               JOIN relations ON distance_method_both_classes.targetClassId = relations.ClassID AND distance_method_both_classes.methodId = relations.MethodID) as moveMethodRefactoring;
+               JOIN relations ON distance_method_both_classes.targetClassId = relations.ClassID AND distance_method_both_classes.methodId = relations.MethodID) as moveMethodRefactoringWithoutSourceDistance
+               LEFT OUTER JOIN distancevalue1 ON moveMethodRefactoringWithoutSourceDistance.methodName = distancevalue1.methodName AND
+               moveMethodRefactoringWithoutSourceDistance.methodParameters = distancevalue1.methodParameters AND
+               moveMethodRefactoringWithoutSourceDistance.sourceClassQualifiedName = distancevalue1.methodOfClass AND
+               moveMethodRefactoringWithoutSourceDistance.sourceClassQualifiedName = distancevalue1.className) as moveMethodRefactoring
+WHERE moveMethodRefactoring.IsMethodNotInThisClass = 1;
