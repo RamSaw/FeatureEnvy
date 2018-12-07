@@ -2,14 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="527293fb-fe39-4aca-a7fd-6920db6dc331" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/refactoringGeneration/MoveMethodRefactoring.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/refactoringGeneration/databaseExtraction.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/refactoringGeneration/refactoringGenerator.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/refactoringGeneration/refactoringsGeneration.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/refactoringGeneration/stringUtils.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Data/DataBase/query_to_get_evaluation_data.sql" beforeDir="false" afterPath="$PROJECT_DIR$/../Data/DataBase/query_to_get_evaluation_data.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/refactoringGeneration/MoveMethodRefactoring.py" beforeDir="false" afterPath="$PROJECT_DIR$/refactoringGeneration/MoveMethodRefactoring.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/refactoringGeneration/refactoringGenerator.py" beforeDir="false" afterPath="$PROJECT_DIR$/refactoringGeneration/refactoringGenerator.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/refactoringGeneration/refactoringsGeneration.py" beforeDir="false" afterPath="$PROJECT_DIR$/refactoringGeneration/refactoringsGeneration.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -19,7 +15,7 @@
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/Algorithm$test.coverage" NAME="test Coverage Results" MODIFIED="1544188898586" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Algorithm$refactoringsGeneration.coverage" NAME="refactoringsGeneration Coverage Results" MODIFIED="1544189720722" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/refactoringGeneration" />
+    <SUITE FILE_PATH="coverage/Algorithm$refactoringsGeneration.coverage" NAME="refactoringsGeneration Coverage Results" MODIFIED="1544199109051" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/refactoringGeneration" />
   </component>
   <component name="FUSProjectUsageTrigger">
     <session id="-1825501496">
@@ -52,27 +48,29 @@
         <counts>
           <entry key="Python Console" value="3" />
           <entry key="dummy" value="6" />
-          <entry key="py" value="3889" />
+          <entry key="py" value="4447" />
+          <entry key="txt" value="63" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="PLAIN_TEXT" value="6" />
-          <entry key="Python" value="3891" />
+          <entry key="PLAIN_TEXT" value="69" />
+          <entry key="Python" value="4449" />
           <entry key="RegExp" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="java" value="3" />
-          <entry key="py" value="20" />
+          <entry key="out" value="2" />
+          <entry key="py" value="24" />
           <entry key="txt" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="PLAIN_TEXT" value="7" />
-          <entry key="Python" value="20" />
+          <entry key="PLAIN_TEXT" value="9" />
+          <entry key="Python" value="24" />
         </counts>
       </usages-collector>
     </session>
@@ -83,7 +81,7 @@
         <entry file="file://$PROJECT_DIR$/test.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="306">
-              <caret line="62" lean-forward="true" selection-start-line="62" selection-end-line="62" />
+              <caret line="62" selection-start-line="62" selection-end-line="62" />
               <folding>
                 <element signature="e#86#104#0" expanded="true" />
               </folding>
@@ -94,8 +92,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/refactoringGeneration/refactoringsGeneration.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="414">
-              <caret line="30" column="94" selection-start-line="30" selection-start-column="94" selection-end-line="30" selection-end-column="94" />
+            <state relative-caret-position="216">
+              <caret line="31" column="22" lean-forward="true" selection-start-line="31" selection-start-column="22" selection-end-line="31" selection-end-column="22" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
               </folding>
@@ -104,10 +102,37 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/anaconda3/lib/python3.6/site-packages/pymysql/err.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="511">
+              <caret line="108" selection-start-line="108" selection-end-line="108" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/anaconda3/lib/python3.6/json/encoder.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="179" selection-start-line="179" selection-end-line="179" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../../../JDeodorant/Utilities-Evaluation/JBMoveMethodLoader.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="18">
+              <caret line="1" selection-start-line="1" selection-end-line="1" selection-end-column="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/refactoringGeneration/databaseExtraction.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="39" column="19" lean-forward="true" selection-start-line="39" selection-start-column="19" selection-end-line="39" selection-end-column="19" />
+            <state relative-caret-position="204">
+              <caret line="16" column="4" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="4" />
               <folding>
                 <element signature="e#0#35#0" expanded="true" />
               </folding>
@@ -116,10 +141,22 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../../../JDeodorant/Utilities-Evaluation/Evaluator.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="504">
+              <caret line="37" column="12" lean-forward="true" selection-start-line="14" selection-start-column="12" selection-end-line="37" selection-end-column="12" />
+              <folding>
+                <element signature="e#0#13#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/refactoringGeneration/refactoringGenerator.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-228">
-              <caret line="23" selection-start-line="23" selection-end-line="23" />
+            <state relative-caret-position="468">
+              <caret line="77" selection-start-line="77" selection-end-line="77" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
               </folding>
@@ -140,24 +177,10 @@
         <entry file="file://$PROJECT_DIR$/refactoringGeneration/stringUtils.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="522">
-              <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
+              <caret line="29" selection-start-line="29" selection-end-line="29" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../../../../../ArchitectureReloaded/vectorization/src/main/java/org/jetbrains/research/groups/ml_methods/vectorization/DlbRefactoringVector.java">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../../../../../ArchitectureReloaded/vectorization/src/main/java/org/jetbrains/research/groups/ml_methods/vectorization/DlbVector.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="501">
-              <caret line="51" column="40" lean-forward="true" selection-start-line="51" selection-start-column="12" selection-end-line="51" selection-end-column="40" />
             </state>
           </provider>
         </entry>
@@ -185,10 +208,10 @@
       <list>
         <option value="$PROJECT_DIR$/../../../JDeodorant/Utilities-Evaluation/Evaluator.py" />
         <option value="$PROJECT_DIR$/refactoringsGeneration.py" />
-        <option value="$PROJECT_DIR$/refactoringGeneration/MoveMethodRefactoring.py" />
         <option value="$PROJECT_DIR$/refactoringGeneration/databaseExtraction.py" />
         <option value="$PROJECT_DIR$/refactoringGeneration/stringUtils.py" />
         <option value="$PROJECT_DIR$/test.py" />
+        <option value="$PROJECT_DIR$/refactoringGeneration/MoveMethodRefactoring.py" />
         <option value="$PROJECT_DIR$/refactoringGeneration/refactoringGenerator.py" />
         <option value="$PROJECT_DIR$/refactoringGeneration/refactoringsGeneration.py" />
       </list>
@@ -233,7 +256,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../JDeodorant/Utilities-Evaluation/JDeodorantMoveMethodLoader.py" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../JDeodorant/Utilities-Evaluation/Evaluator.py" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
@@ -294,7 +317,7 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/refactoringGeneration/refactoringsGeneration.py" />
-      <option name="PARAMETERS" value="-uroot -p12345" />
+      <option name="PARAMETERS" value="-uroot -p12345 -d/home/mikhail/Documents/Development/UtilitiesEvaluation/testDataset_DLB" />
       <option name="SHOW_COMMAND_LINE" value="true" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
@@ -346,22 +369,39 @@
       <option name="presentableId" value="Default" />
       <updated>1544102223283</updated>
     </task>
+    <task id="LOCAL-00001" summary="Created extraction of refactorings for one project.">
+      <created>1544195252529</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1544195252529</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="TodoView" selected-index="4">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="-11" width="1922" height="1212" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16435432" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16435432" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32992566" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.38289964" />
+      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.38289964" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32992566" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
@@ -381,6 +421,10 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Created extraction of refactorings for one project." />
+    <option name="LAST_COMMIT_MESSAGE" value="Created extraction of refactorings for one project." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -526,16 +570,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../../../JDeodorant/Utilities-Evaluation/Evaluator.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="609">
-          <caret line="95" selection-start-line="95" selection-end-line="97" />
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../../../../../ArchitectureReloaded/vectorization/src/main/java/org/jetbrains/research/groups/ml_methods/vectorization/DlbVectorization.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-21" />
@@ -563,7 +597,7 @@
     <entry file="file://$PROJECT_DIR$/../../../../../ArchitectureReloaded/vectorization/src/main/java/org/jetbrains/research/groups/ml_methods/vectorization/DlbVector.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="501">
-          <caret line="51" column="40" lean-forward="true" selection-start-line="51" selection-start-column="12" selection-end-line="51" selection-end-column="40" />
+          <caret line="51" column="40" selection-start-line="51" selection-start-column="12" selection-end-line="51" selection-end-column="40" />
         </state>
       </provider>
     </entry>
@@ -577,7 +611,7 @@
     <entry file="file://$PROJECT_DIR$/refactoringGeneration/stringUtils.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="522">
-          <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
+          <caret line="29" selection-start-line="29" selection-end-line="29" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
           </folding>
@@ -601,36 +635,9 @@
     <entry file="file://$PROJECT_DIR$/test.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
-          <caret line="62" lean-forward="true" selection-start-line="62" selection-end-line="62" />
+          <caret line="62" selection-start-line="62" selection-end-line="62" />
           <folding>
             <element signature="e#86#104#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/refactoringGeneration/MoveMethodRefactoring.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/refactoringGeneration/refactoringGenerator.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-228">
-          <caret line="23" selection-start-line="23" selection-end-line="23" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/refactoringGeneration/databaseExtraction.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="39" column="19" lean-forward="true" selection-start-line="39" selection-start-column="19" selection-end-line="39" selection-end-column="19" />
-          <folding>
-            <element signature="e#0#35#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -644,10 +651,73 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/../../../JDeodorant/Utilities-Evaluation/JBMoveMethodLoader.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="1" selection-start-line="1" selection-end-line="1" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/refactoringGeneration/MoveMethodRefactoring.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/anaconda3/lib/python3.6/json/encoder.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="179" selection-start-line="179" selection-end-line="179" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/refactoringGeneration/refactoringGenerator.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="468">
+          <caret line="77" selection-start-line="77" selection-end-line="77" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/refactoringGeneration/out">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-87354" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../JDeodorant/Utilities-Evaluation/Evaluator.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="504">
+          <caret line="37" column="12" lean-forward="true" selection-start-line="14" selection-start-column="12" selection-end-line="37" selection-end-column="12" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/refactoringGeneration/databaseExtraction.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="16" column="4" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="4" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/anaconda3/lib/python3.6/site-packages/pymysql/err.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="511">
+          <caret line="108" selection-start-line="108" selection-end-line="108" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/refactoringGeneration/refactoringsGeneration.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="30" column="94" selection-start-line="30" selection-start-column="94" selection-end-line="30" selection-end-column="94" />
+        <state relative-caret-position="216">
+          <caret line="31" column="22" lean-forward="true" selection-start-line="31" selection-start-column="22" selection-end-line="31" selection-end-column="22" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
           </folding>

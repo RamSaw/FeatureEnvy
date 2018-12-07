@@ -75,7 +75,7 @@ class RefactoringGenerator:
                                   refactoring_to_suggest[SOURCE_CLASS_QUALIFIED_NAME_COLUMN],
                                   refactoring_to_suggest[METHOD_NAME_COLUMN],
                                   parameters_to_list(refactoring_to_suggest[METHOD_PARAMETERS_COLUMN]),
-                                  refactoring_accuracy)
+                                  float(refactoring_accuracy))
 
     def get_refactoring_for_opportunities_bucket(self, refactoring_opportunities):
         pass

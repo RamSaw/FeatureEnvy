@@ -3,7 +3,7 @@ from typing import List
 
 class MoveMethodRefactoring:
     def __init__(self, target_class_qualified_name: str, source_class_qualified_name: str,
-                 method_name: str, params_classes: List[str], accuracy) -> None:
+                 method_name: str, params_classes: List[str], accuracy: float) -> None:
         super().__init__()
         self.target_class_qualified_name = target_class_qualified_name
         self.source_class_qualified_name = source_class_qualified_name
