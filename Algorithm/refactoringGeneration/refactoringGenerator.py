@@ -82,15 +82,15 @@ class RefactoringGenerator:
     @staticmethod
     def get_refactoring_for_opportunities_bucket(refactoring_opportunities):
         partitioned_method_name = partition_name(refactoring_opportunities[0][METHOD_NAME_COLUMN])
-        partiotioned_source_class_name = partition_name(refactoring_opportunities[0][SOURCE_CLASS_NAME_COLUMN])
+        partitioned_source_class_name = partition_name(refactoring_opportunities[0][SOURCE_CLASS_NAME_COLUMN])
         model_string_data = []
         test_distances = []
         for opportunity in refactoring_opportunities:
             assert partitioned_method_name == partition_name(opportunity[METHOD_NAME_COLUMN])
-            assert partiotioned_source_class_name == partition_name(opportunity[SOURCE_CLASS_NAME_COLUMN])
+            assert partitioned_source_class_name == partition_name(opportunity[SOURCE_CLASS_NAME_COLUMN])
             partiotioned_target_class_name = partition_name(opportunity[TARGET_CLASS_NAME_COLUMN])
             model_string_data.append(" ".join(partitioned_method_name +
-                                              partiotioned_source_class_name + partiotioned_target_class_name))
+                                              partitioned_source_class_name + partiotioned_target_class_name))
             test_distances.append([opportunity[SOURCE_CLASS_DISTANCE_COLUMN],
                                    opportunity[TARGET_CLASS_DISTANCE_COLUMN]])
 
