@@ -1,10 +1,8 @@
 import getopt
+import json
 import os
 import sys
-import json
-import traceback
 
-from refactoringGeneration.MoveMethodRefactoring import MoveMethodRefactoring
 from refactoringGeneration.databaseExtraction import get_possible_refactorings_for_project
 
 
@@ -22,11 +20,13 @@ def generate_possible_refactorings_for_dataset(db_user, db_password, dataset_pat
     dataset_root_path = os.path.join(dataset_path, "projects")
     for project in os.listdir(dataset_root_path):
         try:
+            print("Started: " + project)
             json_file_name = "DLB_" + project
             project_path = os.path.join(dataset_root_path, project)
             possible_refactorings = get_possible_refactorings_for_project(db_user, db_password, project)
             with open(os.path.join(project_path, json_file_name), 'w') as refactorings_file:
                 refactorings_file.write(json.dumps([ob.__dict__ for ob in possible_refactorings], indent=2))
+            print("Ended: " + project)
         except Exception as err:
             print("Error on project: " + project)
             print(err)

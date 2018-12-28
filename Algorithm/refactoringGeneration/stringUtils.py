@@ -12,7 +12,7 @@ def camel_case_split(identifier):
 
 def tokenize_name(name):
     if name.startswith("_"):
-        name = name.substring(1)
+        name = name[1:]
     if name.upper() == name:
         tokenized_string = re.compile("_").split(name)
     else:
